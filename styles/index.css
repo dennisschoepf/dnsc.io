@@ -1,25 +1,17 @@
-@import './button.css';
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  font-weight: normal;
+  src: url('/public/fonts/CerebriSansPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Pro';
+  font-weight: bold;
+  src: url('/public/fonts/CerebriSansPro-Bold.woff') format('woff');
+}
 
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
-
-.hero {
-  width: 100%;
-  color: #333;
-}
-
-.title {
-  margin: 0;
-  width: 100%;
-  padding-top: 80px;
-  line-height: 1.15;
-  font-size: 48px;
-}
-
-.title,
-.description {
-  text-align: center;
-}
