@@ -7,13 +7,13 @@
 @font-face {
   font-family: 'Cerebri Sans Pro';
   font-weight: normal;
-  src: url('/public/fonts/CerebriSansPro-Regular.woff') format('woff');
+  src: url('/fonts/CerebriSansPro-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Cerebri Sans Pro';
   font-weight: bold;
-  src: url('/public/fonts/CerebriSansPro-Bold.woff') format('woff');
+  src: url('/fonts/CerebriSansPro-Bold.woff') format('woff');
 }
 
 ::selection {
