@@ -1,3 +1,9 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
 @font-face {
   font-family: 'Cerebri Sans Pro';
   font-weight: normal;
@@ -10,8 +16,21 @@
   src: url('/public/fonts/CerebriSansPro-Bold.woff') format('woff');
 }
 
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
+::selection {
+  color: white;
+  background: #38B2AC; /* WebKit/Blink Browsers */
+}
+
+/* Text Link hover effects */
+
+.text-hover-effect-bg {
+  display: none;
+}
+
+.text-hover-effect:hover .text-hover-effect-bg {
+  display: block;
+}
+
+.text-hover-effect:hover .text-hover-effect-text {
+  color: white;
+}

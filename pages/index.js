@@ -1,9 +1,13 @@
-import Nav from '../components/Nav/Nav';
-import Headline from '../components/Headline/Headline';
+import Nav from '../components/Nav';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import Footer from '../components/Footer';
 
 export default () => (
   <div>
     <Nav />
-    <Headline>.</Headline>
+    <Hero />
+    <Projects />
+    <Footer />
   </div>
 )
