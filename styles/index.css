@@ -16,13 +16,13 @@
   src: url('/fonts/CerebriSansPro-Bold.woff') format('woff');
 }
 
+/* Custom Text Selection */
 ::selection {
   color: white;
   background: #38B2AC; /* WebKit/Blink Browsers */
 }
 
 /* Text Link hover effects */
-
 @media (hover: none) {
   .text-hover-effect:hover .text-hover-effect-bg {
     display: none;
