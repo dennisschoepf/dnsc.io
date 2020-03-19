@@ -12,7 +12,7 @@ export default () => {
 
   return (
     <div className="container mx-auto p-4">
-      <ProjectPageContent />
+      {project && projects[project] && <ProjectPageContent />}
     </div>
   );
 };
