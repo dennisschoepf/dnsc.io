@@ -1,25 +1,18 @@
-import { useRouter } from 'next/router';
-/* Projects */
-import Microspot from '../../data/projects/microspot.mdx';
-import ObiMagazin from '../../data/projects/obi-magazin.mdx';
-import Vaillant from '../../data/projects/vaillant.mdx';
-
-const projects = {
-  microspot: Microspot,
-  'obi-magazin': ObiMagazin,
-  vaillant: Vaillant,
-};
+import { useRouter } from "next/router";
+import { projects } from "../../data/projects/projects";
 
 export default () => {
   const router = useRouter();
   const { project } = router.query;
-  const Content = projects[project];
+  let ProjectPageContent = null;
+
+  if (project && projects[project]) {
+    ProjectPageContent = projects[project].component;
+  }
 
   return (
-    <div>
-      <div className="container mx-auto p-4">
-        {project && <Content />}
-      </div>
+    <div className="container mx-auto p-4">
+      <ProjectPageContent />
     </div>
   );
-}
+};
