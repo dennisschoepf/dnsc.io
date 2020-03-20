@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Cerebri Sans Pro";
+  font-family: 'Cerebri Sans Pro';
   font-weight: normal;
-  src: url("/fonts/CerebriSansPro-Regular.woff") format("woff");
+  src: url('/fonts/CerebriSansPro-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Cerebri Sans Pro";
+  font-family: 'Cerebri Sans Pro';
   font-weight: bold;
-  src: url("/fonts/CerebriSansPro-Bold.woff") format("woff");
+  src: url('/fonts/CerebriSansPro-Bold.woff') format('woff');
 }
 
 /* Custom Text Selection */

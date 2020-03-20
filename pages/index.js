@@ -1,9 +1,10 @@
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
+import { Fragment } from "react";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 
 export default () => (
-  <div>
+  <Fragment>
     <Hero />
     <Projects />
-  </div>
-)
+  </Fragment>
+);

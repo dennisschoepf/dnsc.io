@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
-import { projects } from "../../data/projects/projects";
+import { useRouter } from 'next/router';
+import { projects } from '../../data/projects/projects';
 
 export default () => {
   const router = useRouter();
@@ -11,7 +11,8 @@ export default () => {
   }
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 mt-12">
+      <div className="uppercase font-bold text-gray-500">Project summary</div>
       {project && projects[project] && <ProjectPageContent />}
     </div>
   );
