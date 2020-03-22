@@ -18,7 +18,7 @@ const Filters = ({ filters, selectedFilters, setSelectedFilters }) => {
       {filters.map(filter => (
         <div
           key={filter}
-          className={`flex align-center justify-center py-2 border-2 border-black rounded hover:bg-black hover:text-white cursor-pointer ${selectedFilters.some(
+          className={`flex align-center justify-center py-2 border-2 border-black rounded hover:shadow-md hover:text-white cursor-pointer ${selectedFilters.some(
             selectedFilter => selectedFilter === filter
           ) && 'bg-black text-white'}`}
           onClick={() => toggleFilters(filter)}
