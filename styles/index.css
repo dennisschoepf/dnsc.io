@@ -51,3 +51,7 @@
   color: white;
   box-shadow: none;
 }
+
+.grid-eq-height {
+  grid-auto-rows: 1fr;
+}

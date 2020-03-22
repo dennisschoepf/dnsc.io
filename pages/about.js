@@ -1,7 +1,4 @@
 import Nav from '../components/Nav';
+import Container from '../components/Container';
 
-export default () => (
-  <div>
-    About
-  </div>
-)
+export default () => <Container>About</Container>;

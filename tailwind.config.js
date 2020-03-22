@@ -1,7 +1,21 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'sans': ['Cerebri\\ Sans\\ Pro', 'sans-serif'],
+      sans: ['Cerebri\\ Sans\\ Pro', 'sans-serif'],
     },
-  }
-}
+  },
+  variants: [
+    'responsive',
+    'group-hover',
+    'focus-within',
+    'first',
+    'last',
+    'odd',
+    'even',
+    'hover',
+    'focus',
+    'active',
+    'visited',
+    'disabled',
+  ],
+};

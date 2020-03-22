@@ -1,12 +1,11 @@
-import StyledLink from "./StyledLink";
+import StyledLink from './StyledLink';
 import Headline from './Headline';
 import Paragraph from './Paragraph';
+import Container from './Container';
 
-export default () => (
-  <div className="container mx-auto p-4 mt-40 sm:mt-56 text-center">
-    <Headline>Hello there</Headline>
-    <div className="mx-auto md:w-10/12 lg:w-8/12">
-      <Paragraph>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <StyledLink href="/about">nonumy</StyledLink> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</Paragraph>
-    </div>
-  </div>
+export default ({ headline, children, reducedMt }) => (
+  <Container className={`${reducedMt ? 'mt-16' : 'mt-40'} text-center`}>
+    <Headline>{headline}</Headline>
+    <div className="mx-auto lg:w-6/12">{children}</div>
+  </Container>
 );
