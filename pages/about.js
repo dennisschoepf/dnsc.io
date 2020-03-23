@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Fragment } from 'react';
 import Nav from '../components/Nav';
 import Container from '../components/Container';
 
