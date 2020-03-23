@@ -1,5 +1,12 @@
 {
-  "topics": ["UX & Design", "Dev", "Inspiration", "Collections", "Tools"],
+  "topics": [
+    "UX & Design",
+    "Dev",
+    "Inspiration",
+    "Collections",
+    "Tools",
+    "Articles"
+  ],
   "items": [
     {
       "headline": "Degreeless.design",
@@ -17,7 +24,7 @@
       "headline": "Design Tools are holding us back",
       "description": "I am an advocate on diving into code (or adequate no-code tools for that matter) as fast as possible. While Sketch, Figma & Co. have their place, this article explains some shortcomings they might have.",
       "href": "https://www.degreeless.design/",
-      "topics": ["UX & Design"]
+      "topics": ["UX & Design", "Articles"]
     },
     {
       "headline": "Practical Tips for Great UI Animation",
@@ -47,13 +54,19 @@
       "headline": "The Garden and the stream: A Technopastoral",
       "description": "An essay introducing gardens and streams as ways to represent different approaches to the web in general",
       "href": "https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/",
-      "topics": ["Inspiration"]
+      "topics": ["Inspiration", "Articles"]
     },
     {
       "headline": "Daywreckers",
       "description": "Daily interesting links on just about everything",
       "href": "http://daywreckers.com/",
       "topics": ["Collections"]
+    },
+    {
+      "headline": "Public Archive",
+      "description": "Public agencies of graphic design of the 20th century. Great to get some inspiration or to just enjoy a look into the past.",
+      "href": "https://publicarchive.studio/",
+      "topics": ["UX & Design", "Inspiration", "Collections"]
     }
   ]
 }
