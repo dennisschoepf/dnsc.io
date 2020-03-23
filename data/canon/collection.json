@@ -38,6 +38,24 @@
       "description": "Nice little helper tool to create duotones from images so that these images more easily match a design's color.",
       "href": "https://duotone.shapefactory.co/",
       "topics": ["Design", "Tools"]
+    },
+    {
+      "headline": "Brendan Schlagel's Canon",
+      "description": "An important inspiration for the canon you are looking at right now",
+      "href": "https://www.brendanschlagel.com/canon/",
+      "topics": ["Inspiration"]
+    },
+    {
+      "headline": "David Cole's Canon",
+      "description": "Another important inspiration for the canon you are looking at right now",
+      "href": "http://davidcole.me/canon/",
+      "topics": ["Inspiration"]
+    },
+    {
+      "headline": "The Garden and the stream: A Technopastoral",
+      "description": "An essay introducing gardens and streams as ways to represent different approaches to the web in general",
+      "href": "https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/",
+      "topics": ["Inspiration"]
     }
   ]
 }
