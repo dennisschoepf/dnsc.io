@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <MDXProvider components={mdxComponents}>
       <Head>
-        <title>dnsc.io - Dennis Schoepf</title>
         <meta charSet="UTF-8" />
         <meta
           name="description"

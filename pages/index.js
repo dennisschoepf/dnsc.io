@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Head from 'next/head';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Paragraph from '../components/Paragraph';
@@ -6,6 +7,9 @@ import StyledLink from '../components/StyledLink';
 
 export default () => (
   <Fragment>
+    <Head>
+      <title>dnsc.io - Hello there 👋</title>
+    </Head>
     <Hero headline="Hello there,">
       <Paragraph>
         I am Dennis, a web developer turned Human-Computer-Interaction Master's
