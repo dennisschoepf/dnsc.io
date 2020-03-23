@@ -16,19 +16,19 @@
     },
     {
       "headline": "Refactoring UI",
-      "description": "A great resource by Steve Schoger that taught me a lot about UI design, especially concerning hierarchy and clarity within web apps",
+      "description": "A great resource by Steve Schoger that taught me a lot about UI design, especially concerning hierarchy and clarity within web apps.",
       "href": "https://www.refactoringui.com/",
       "topics": ["UX & Design", "Collections"]
     },
     {
       "headline": "Design Tools are holding us back",
-      "description": "I am an advocate on diving into code (or adequate no-code tools for that matter) as fast as possible. While Sketch, Figma & Co. have their place, this article explains some shortcomings they might have.",
+      "description": "I am an advocate on diving into code (or adequate no-code tools for that matter) as fast as possible. While Sketch, Figma & Co. have their place, this article explains their shortcomings.",
       "href": "https://www.degreeless.design/",
       "topics": ["UX & Design", "Articles"]
     },
     {
       "headline": "Practical Tips for Great UI Animation",
-      "description": "Great talk about micro-interactions, why you should use animation and what properties you could and should animate",
+      "description": "Great talk about micro-interactions, why you should use animation and what properties you could and should animate.",
       "href": "https://www.youtube.com/watch?v=LmXVxkWjLT8&feature=youtu.be",
       "topics": ["UX & Design"]
     },
@@ -40,25 +40,25 @@
     },
     {
       "headline": "Brendan Schlagel's Canon",
-      "description": "An important inspiration for the canon you are looking at right now",
+      "description": "An important inspiration for the canon you are looking at right now.",
       "href": "https://www.brendanschlagel.com/canon/",
       "topics": ["Inspiration", "Collections"]
     },
     {
       "headline": "David Cole's Canon",
-      "description": "Another important inspiration for the canon you are looking at right now",
+      "description": "Another important inspiration for the canon you are looking at right now.",
       "href": "http://davidcole.me/canon/",
       "topics": ["Inspiration", "Collections"]
     },
     {
       "headline": "The Garden and the stream: A Technopastoral",
-      "description": "An essay introducing gardens and streams as ways to represent different approaches to the web in general",
+      "description": "An essay introducing gardens and streams as ways to represent different approaches to the web in general.",
       "href": "https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/",
       "topics": ["Inspiration", "Articles"]
     },
     {
       "headline": "Daywreckers",
-      "description": "Daily interesting links on just about everything",
+      "description": "Daily interesting links on just about everything - from little blogs to interesting products.",
       "href": "http://daywreckers.com/",
       "topics": ["Collections"]
     },
