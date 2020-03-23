@@ -1,9 +1,10 @@
+import { useState, Fragment } from 'react';
+import Head from 'next/head';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
 import Paragraph from '../components/Paragraph';
 import Filters from '../components/Filters';
 import collection from '../data/canon/collection.json';
-import { useState, Fragment } from 'react';
 import CanonThumbnail from '../components/CanonThumbnail';
 
 export default () => {
