@@ -5,31 +5,31 @@
       "headline": "Degreeless.design",
       "description": "A beautifully curated collection of courses, books, articles and more. Helped me built a foundation in design during my time as a web developer.",
       "href": "https://www.degreeless.design/",
-      "topics": ["Design", "Collections"]
+      "topics": ["UX & Design", "Collections"]
     },
     {
       "headline": "Refactoring UI",
       "description": "A great resource by Steve Schoger that taught me a lot about UI design, especially concerning hierarchy and clarity within web apps",
       "href": "https://www.refactoringui.com/",
-      "topics": ["Design", "UX"]
+      "topics": ["UX & Design", "UX"]
     },
     {
       "headline": "Design Tools are holding us back",
       "description": "I am an advocate on diving into code (or adequate no-code tools for that matter) as fast as possible. While Sketch, Figma & Co. have their place, this article explains some shortcomings they might have.",
       "href": "https://www.degreeless.design/",
-      "topics": ["Design"]
+      "topics": ["UX & Design"]
     },
     {
       "headline": "Practical Tips for Great UI Animation",
       "description": "Great talk about micro-interactions, why you should use animation and what properties you could and should animate",
       "href": "https://www.youtube.com/watch?v=LmXVxkWjLT8&feature=youtu.be",
-      "topics": ["Design"]
+      "topics": ["UX & Design"]
     },
     {
       "headline": "DuoTone",
       "description": "Nice little helper tool to create duotones from images so that these images more easily match a design's color.",
       "href": "https://duotone.shapefactory.co/",
-      "topics": ["Design", "Tools"]
+      "topics": ["UX & Design", "Tools"]
     },
     {
       "headline": "Brendan Schlagel's Canon",
