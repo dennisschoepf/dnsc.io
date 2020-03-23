@@ -1,13 +1,5 @@
 {
-  "topics": [
-    "Design",
-    "UX",
-    "Dev",
-    "Research",
-    "Inspiration",
-    "Collections",
-    "Tools"
-  ],
+  "topics": ["UX & Design", "Dev", "Inspiration", "Collections", "Tools"],
   "items": [
     {
       "headline": "Degreeless.design",
@@ -43,19 +35,25 @@
       "headline": "Brendan Schlagel's Canon",
       "description": "An important inspiration for the canon you are looking at right now",
       "href": "https://www.brendanschlagel.com/canon/",
-      "topics": ["Inspiration"]
+      "topics": ["Inspiration", "Collections"]
     },
     {
       "headline": "David Cole's Canon",
       "description": "Another important inspiration for the canon you are looking at right now",
       "href": "http://davidcole.me/canon/",
-      "topics": ["Inspiration"]
+      "topics": ["Inspiration", "Collections"]
     },
     {
       "headline": "The Garden and the stream: A Technopastoral",
       "description": "An essay introducing gardens and streams as ways to represent different approaches to the web in general",
       "href": "https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/",
       "topics": ["Inspiration"]
+    },
+    {
+      "headline": "Daywreckers",
+      "description": "Daily interesting links on just about everything",
+      "href": "http://daywreckers.com/",
+      "topics": ["Collections"]
     }
   ]
 }
