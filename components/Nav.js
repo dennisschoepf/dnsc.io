@@ -10,11 +10,6 @@ export default () => {
       <Link href="/">
         <a className="py-2 px-4">{!isIndexPage && <span>&larr;</span>} dnsc</a>
       </Link>
-      <Link href="/about">
-        <a className="nav-link-hover-none py-2 px-4 hover:bg-teal-600 hover:text-white hover:shadow-lg rounded">
-          More to come ...
-        </a>
-      </Link>
     </div>
   );
 };
