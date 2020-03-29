@@ -4,7 +4,7 @@ const CanonThumbnail = ({ headline, description, href, topics }) => (
     href={href}
     target="_blank"
   >
-    <h3 className="text-white bg-black p-4 text-xl font-bold underline group-hover:bg-teal-600">
+    <h3 className="text-white bg-black p-4 text-xl font-bold underline group-hover:bg-red-700">
       {headline}
     </h3>
     <p className="m-0 p-4 flex-grow">{description}</p>

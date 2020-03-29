@@ -22,36 +22,6 @@
   background: #38b2ac; /* WebKit/Blink Browsers */
 }
 
-/* Text Link hover effects */
-@media (max-width: 768px) {
-  .text-hover-effect:hover .text-hover-effect-bg {
-    display: none;
-  }
-
-  .nav-link-hover-none:hover {
-    background: transparent;
-    color: black;
-    box-shadow: none;
-  }
-}
-
-.text-hover-effect-text {
-  box-shadow: inset 0 -8px 0 rgba(49, 151, 149, 0.4);
-}
-
-.text-hover-effect-bg {
-  display: none;
-}
-
-.text-hover-effect:hover .text-hover-effect-bg {
-  display: block;
-}
-
-.text-hover-effect:hover .text-hover-effect-text {
-  color: white;
-  box-shadow: none;
-}
-
 .grid-eq-height {
   grid-auto-rows: 1fr;
 }
