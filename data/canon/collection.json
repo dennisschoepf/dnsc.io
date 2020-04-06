@@ -73,6 +73,12 @@
       "description": "A curated list of often overlooked smaller retailers with nice websites. Great source of inspiration for e-commerce projects.",
       "href": "https://publicarchive.studio/",
       "topics": ["UX & Design", "Inspiration", "Collections"]
+    },
+    {
+      "headline": "Getting Real",
+      "description": "Great guide on how to focus on the essential when building a web app / creating an online service.",
+      "href": "https://basecamp.com/gettingreal",
+      "topics": ["Inspiration", "Collections"]
     }
   ]
 }
