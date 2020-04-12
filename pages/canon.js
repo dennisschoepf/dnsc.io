@@ -1,11 +1,11 @@
 import { useState, Fragment } from 'react';
 import Head from 'next/head';
-import Container from '../components/Container';
-import Hero from '../components/Hero';
-import Paragraph from '../components/Paragraph';
-import Filters from '../components/Filters';
+import Container from '../src/components/Container';
+import Hero from '../src/components/Hero';
+import Paragraph from '../src/components/Paragraph';
+import Filters from '../src/components/Filters';
 import collection from '../data/canon/collection.json';
-import CanonThumbnail from '../components/CanonThumbnail';
+import CanonThumbnail from '../src/components/CanonThumbnail';
 
 export default () => {
   const [selectedFilters, setSelectedFilters] = useState([]);

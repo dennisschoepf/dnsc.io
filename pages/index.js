@@ -1,9 +1,8 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
-import Hero from '../components/Hero';
-import Projects from '../components/Projects';
-import Paragraph from '../components/Paragraph';
-import StyledLink from '../components/StyledLink';
+import Hero from '../src/components/Hero';
+import Paragraph from '../src/components/Paragraph';
+import StyledLink from '../src/components/StyledLink';
 
 export default () => (
   <Fragment>

@@ -1,10 +1,10 @@
 import { MDXProvider } from '@mdx-js/react';
 import '../styles/index.css';
 import Head from 'next/head';
-import Headline from '../components/Headline';
-import Paragraph from '../components/Paragraph';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
+import Headline from '../src/components/Headline';
+import Paragraph from '../src/components/Paragraph';
+import Nav from '../src/components/Nav';
+import Footer from '../src/components/Footer';
 
 const mdxComponents = {
   h1: Headline,
