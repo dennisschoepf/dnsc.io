@@ -79,6 +79,12 @@
       "description": "Great guide on how to focus on the essential when building a web app / creating an online service.",
       "href": "https://basecamp.com/gettingreal",
       "topics": ["Inspiration", "Collections"]
+    },
+    {
+      "headline": "Minimalissimo",
+      "description": "A curated collection of everything minimalist, from architecture to homeware.",
+      "href": "https://minimalissimo.com/",
+      "topics": ["Inspiration", "Collections"]
     }
   ]
 }
