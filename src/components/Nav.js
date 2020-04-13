@@ -1,18 +1,19 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Fragment } from 'react';
 
 export default () => {
   const router = useRouter();
   const isIndexPage = router.pathname === '/';
-  const isAboutPage = router.pathname === '/about';
 
   return (
-    <div className="m-2 md:m-4 flex flex-row justify-between font-bold text-lg md:text-xl tracking-wide uppercase">
+    <div
+      className={`flex flex-row font-bold text-xl md:text-2xl tracking-wide uppercase ${
+        isIndexPage ? 'justify-center' : 'justify-between'
+      }`}
+    >
       <Link href="/">
-        <a className="py-2 px-4">{!isIndexPage && <span>&larr;</span>} dnsc</a>
-      </Link>
-      <Link href="/about">
-        <a className="py-2 px-4">About {!isAboutPage && <span>&rarr;</span>}</a>
+        <a className="m-4 lg:m-6">{!isIndexPage && <span>&larr;</span>} dnsc</a>
       </Link>
     </div>
   );
