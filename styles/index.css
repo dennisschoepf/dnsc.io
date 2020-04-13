@@ -19,7 +19,7 @@
 /* Custom Text Selection */
 ::selection {
   color: white;
-  background: #38b2ac; /* WebKit/Blink Browsers */
+  background: #d18a06; /* WebKit/Blink Browsers */
 }
 
 .grid-eq-height {

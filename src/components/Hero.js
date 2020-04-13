@@ -4,8 +4,8 @@ import Paragraph from './Paragraph';
 import Container from './Container';
 
 export default ({ headline, children, reducedMt }) => (
-  <Container className={`mt-16 md:mt-32 text-center`}>
+  <Container className={`mt-16 md:mt-48`}>
     <Headline>{headline}</Headline>
-    <div className="mx-auto lg:w-6/12">{children}</div>
+    <div className="lg:w-4/12">{children}</div>
   </Container>
 );
