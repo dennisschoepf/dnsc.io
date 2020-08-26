@@ -8,12 +8,16 @@ export default function Nav() {
 
   return (
     <div
-      className={`flex flex-row font-bold text-xl md:text-2xl tracking-wide uppercase ${
-        isIndexPage ? 'justify-center' : 'justify-between'
-      }`}
+      className={`flex flex-row font-bold text-2xl bg-black tracking-wide uppercase justify-center tracking-wider`}
     >
       <Link href="/">
-        <a className="m-4 lg:m-6">{!isIndexPage && <span>&larr;</span>} dnsc</a>
+        <a className="leading-7 relative m-4 lg:m-6">
+          <span className="relative px-1 z-10">dnsc</span>
+          <div
+            className="absolute top-0 left-0 right-0 bottom-0 bg-white w-full h-full"
+            style={{ transform: 'rotate(-13deg)' }}
+          ></div>
+        </a>
       </Link>
     </div>
   );
