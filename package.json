@@ -8,17 +8,17 @@
     "export": "next export"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.5.7",
-    "@next/mdx": "^9.3.4",
+    "@mdx-js/loader": "^1.6.16",
+    "@next/mdx": "^9.5.2",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.3.4",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "next": "^9.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^1.19.1",
-    "tailwindcss": "^1.2.0"
+    "prettier": "^2.1.1",
+    "tailwindcss": "^1.7.3"
   }
 }

@@ -2,7 +2,7 @@ import { useCovidData } from '../hooks/useCovidData';
 import Container from '../components/Container';
 import Headline from '../components/Headline';
 
-export default () => {
+export default function Covid() {
   const [
     isErrorTotal,
     isLoadingTotal,
@@ -30,7 +30,7 @@ export default () => {
       <div className="flex flex-wrap mb-4">
         {dataTotal &&
           Object.keys(dataTotal).map(
-            key =>
+            (key) =>
               key !== 'updated' && (
                 <div className="w-6/12" key={key}>
                   <h4 className="font-bold text-3xl leading-tight">
@@ -49,7 +49,7 @@ export default () => {
       <div className="flex flex-wrap">
         {displayDataCountry &&
           Object.keys(displayDataCountry).map(
-            key =>
+            (key) =>
               key !== 'updated' && (
                 <div className="w-6/12" key={key}>
                   <h4 className="font-bold text-3xl leading-tight">
@@ -76,4 +76,4 @@ export default () => {
       </div>
     </Container>
   );
-};
+}

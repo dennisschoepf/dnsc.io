@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { projects } from '../../data/projects/projects';
 
-export default () => {
+export default function Project() {
   const router = useRouter();
   const { project } = router.query;
   let ProjectPageContent = null;
@@ -16,4 +16,4 @@ export default () => {
       {project && projects[project] && <ProjectPageContent />}
     </div>
   );
-};
+}

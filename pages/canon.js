@@ -7,12 +7,12 @@ import Filters from '../src/components/Filters';
 import collection from '../data/canon/collection.json';
 import CanonThumbnail from '../src/components/CanonThumbnail';
 
-export default () => {
+export default function Canon() {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const itemsToShow =
     selectedFilters.length !== 0
-      ? collection.items.filter(item =>
-          item.topics.some(topic => selectedFilters.indexOf(topic) >= 0)
+      ? collection.items.filter((item) =>
+          item.topics.some((topic) => selectedFilters.indexOf(topic) >= 0)
         )
       : collection.items;
 
@@ -35,11 +35,11 @@ export default () => {
           setSelectedFilters={setSelectedFilters}
         />
         <div className="mt-24 grid gap-4 grid-eq-height grid-cos-1 md:grid-cols-2 lg:grid-cols-3">
-          {itemsToShow.map(item => (
+          {itemsToShow.map((item) => (
             <CanonThumbnail key={item.headline} {...item} />
           ))}
         </div>
       </Container>
     </Fragment>
   );
-};
+}

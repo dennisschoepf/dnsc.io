@@ -5,13 +5,15 @@ import Paragraph from '../src/components/Paragraph';
 import StyledLink from '../src/components/StyledLink';
 import Container from '../src/components/Container';
 
-export default () => (
-  <Fragment>
-    <Head>
-      <title>dnsc.io - Hello there 👋</title>
-    </Head>
-    <Container className="text-6xl text-center">
-      Showcase &middot; Canon &middot; Writing &middot; Writing
-    </Container>
-  </Fragment>
-);
+export default function Index() {
+  return (
+    <Fragment>
+      <Head>
+        <title>dnsc.io - Hello there 👋</title>
+      </Head>
+      <Container className="text-6xl text-center">
+        Showcase &middot; Canon &middot; Writing &middot; Writing
+      </Container>
+    </Fragment>
+  );
+}

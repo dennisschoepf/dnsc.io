@@ -1,4 +1,4 @@
-export default () => {
+export default function Footer() {
   const currentTime = new Date();
   const currentYear = currentTime.getFullYear();
   return (
@@ -8,4 +8,4 @@ export default () => {
       </div>
     </footer>
   );
-};
+}

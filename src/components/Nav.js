@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 
-export default () => {
+export default function Nav() {
   const router = useRouter();
   const isIndexPage = router.pathname === '/';
 
@@ -17,4 +17,4 @@ export default () => {
       </Link>
     </div>
   );
-};
+}
