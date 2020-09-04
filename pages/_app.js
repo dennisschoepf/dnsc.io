@@ -1,41 +1,15 @@
-import { MDXProvider } from '@mdx-js/react';
-import '../styles/index.css';
-import Head from 'next/head';
-import Headline from '../src/components/Headline';
-import Paragraph from '../src/components/Paragraph';
-import Nav from '../src/components/Nav';
-import Footer from '../src/components/Footer';
+import { ThemeProvider } from 'styled-components'
 
-const mdxComponents = {
-  h1: Headline,
-  p: Paragraph,
-};
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <MDXProvider components={mdxComponents}>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta
-          name="description"
-          content="Hello there, I am Dennis Schoepf a designer/developer with over 5 years of professional experience, currently doing a master's degree in Human-Computer-Interaction in Salzburg, Austria."
-        />
-        <meta
-          name="keywords"
-          content="Dennis Schoepf, Dennis, Schoepf, Personal Website, Projects"
-        />
-        <meta name="author" content="Dennis Schoepf" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <div className="flex flex-col min-h-screen">
-        <Nav />
-        <main className="flex-grow">
-          <Component {...pageProps} />
-        </main>
-        <Footer />
-      </div>
-    </MDXProvider>
-  );
+const theme = {
+  colors: {
+    primary: '#0070f3',
+  },
 }
 
-export default MyApp;
+export default function App({ Component, pageProps }) {
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  )
+}
