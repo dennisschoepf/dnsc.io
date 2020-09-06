@@ -1,4 +1,4 @@
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -20,6 +20,8 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
   }
 
   body {
@@ -27,6 +29,19 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-family: 'Cerebri', sans-serif;
     font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  #__next {
+    height: 100%;
+  }
+
+  #SiteWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 `;
 
@@ -54,13 +69,24 @@ const theme = {
   },
 };
 
+const SiteWrapper = styled.main`
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: stretch;
+`;
+
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <SiteWrapper>
+        <GlobalStyles />
+        <Navbar />
+        <div id="SiteWrapper">
+          <Component {...pageProps} />
+        </div>
+        <Footer />
+      </SiteWrapper>
     </ThemeProvider>
   );
 }

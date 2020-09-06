@@ -1,5 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: ${(props) => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.white};
+  padding: ${(props) => props.theme.sizes.xl} 0;
+`;
 
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <FooterContainer>
+      © Dennis Schoepf {new Date().getFullYear()}
+    </FooterContainer>
+  );
 }
