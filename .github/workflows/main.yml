@@ -39,6 +39,6 @@ jobs:
           # target path on the server
           target: ${{ secrets.REMOTE_DIR }}
           # scp file list
-          source: out
+          source: out/*
           # remove target folder before upload data
           rm: true
