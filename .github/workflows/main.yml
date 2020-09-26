@@ -25,12 +25,22 @@ jobs:
         
       - name: Build & export site
         run: npm run build
-          
+        
+      - name: SCP Command to Transfer Files
+        
+      # You may pin to the exact commit or the version
       - name: Copy files to server
-        uses: garygrossgarten/github-action-scp@release
+        uses: appleboy/scp-action@v0.1.1
         with:
-          local: out
-          remote: ${{ secrets.REMOTE_DIR }}
+          # scp remote host
           host: ${{ secrets.REMOTE_HOST }}
+          # scp username
           username: ${{ secrets.REMOTE_USER }}
-          privateKey: ${{ secrets.SSH_KEY }}
+          # content of ssh private key. ex raw content of ~/.ssh/id_rsa
+          key: ${{ secrets.SSH_KEY }}
+          # target path on the server
+          target: ${{ secrets.REMOTE_DIR }}
+          # scp file list
+          source: out
+          # remove target folder before upload data
+          rm: true
