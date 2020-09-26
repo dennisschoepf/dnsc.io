@@ -30,15 +30,10 @@ jobs:
       - name: Copy files to server
         uses: appleboy/scp-action@v0.1.1
         with:
-          # scp remote host
           host: ${{ secrets.REMOTE_HOST }}
-          # scp username
           username: ${{ secrets.REMOTE_USER }}
-          # content of ssh private key. ex raw content of ~/.ssh/id_rsa
           key: ${{ secrets.SSH_KEY }}
-          # target path on the server
           target: ${{ secrets.REMOTE_DIR }}
-          # scp file list
-          source: out/*
-          # remove target folder before upload data
+          source: out
           rm: true
+          strip_components: 1
