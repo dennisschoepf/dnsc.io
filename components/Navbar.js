@@ -16,9 +16,14 @@ const NavContainer = styled.nav`
 const LogoContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: ${(props) => props.theme.sizes.xs};
   margin-bottom: ${(props) => props.theme.sizes.m};
+
+  & > *:first-child {
+    margin-left: ${(props) => props.theme.sizes.xs};
+  }
 `;
 
 const NavItemsContainer = styled.ul`
@@ -42,13 +47,9 @@ const NavItem = styled.a`
 `;
 
 const MobileMenu = styled.menu`
-  width: 100%;
   text-align: center;
-  margin: ${(props) => props.theme.sizes.s} ${(props) => props.theme.sizes.m};
-  border-top: 1px solid ${(props) => props.theme.colors.grey};
-  border-bottom: 1px solid ${(props) => props.theme.colors.grey};
-  padding-top: ${(props) => props.theme.sizes.m};
-  padding-bottom: ${(props) => props.theme.sizes.m};
+  border-left: 1px solid ${(props) => props.theme.colors.grey};
+  padding: ${(props) => props.theme.sizes.s} ${(props) => props.theme.sizes.m};
 
   &:hover {
     cursor: pointer;
@@ -64,8 +65,8 @@ export default function Navbar() {
     <NavContainer>
       <LogoContainer>
         <Logo />
+        <MobileMenu onClick={() => setMenuOpen(!menuOpen)}>Menu</MobileMenu>
       </LogoContainer>
-      <MobileMenu onClick={() => setMenuOpen(!menuOpen)}>Menu</MobileMenu>
       <NavItemsContainer menuOpen={menuOpen}>
         <Link href="/projects" passHref>
           <NavItem active={currentRoute === '/projects'}>Projects</NavItem>
