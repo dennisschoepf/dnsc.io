@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import Logo from './Logo';
 
 const NavContainer = styled.nav`
@@ -24,6 +25,14 @@ const LogoContainer = styled.div`
   & > *:first-child {
     margin-left: ${(props) => props.theme.sizes.xs};
   }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  ${media.greaterThan('medium')`
+    justify-content: center;
+  `}
 `;
 
 const NavItemsContainer = styled.ul`
@@ -35,12 +44,16 @@ const NavItemsContainer = styled.ul`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  ${media.greaterThan('medium')`
+    display: flex;
+  `}
 `;
 
 const NavItem = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.colors.white};
-  border: 1px solid
+  border-bottom: 2px solid
     ${(props) => (props.active ? props.theme.colors.white : 'transparent')};
   padding: ${(props) => props.theme.sizes.s} ${(props) => props.theme.sizes.m};
   margin: ${(props) => props.theme.sizes.xs};
@@ -54,6 +67,10 @@ const MobileMenu = styled.menu`
   &:hover {
     cursor: pointer;
   }
+
+  ${media.greaterThan('medium')`
+    display: none;
+  `}
 `;
 
 export default function Navbar() {
@@ -68,6 +85,9 @@ export default function Navbar() {
         <MobileMenu onClick={() => setMenuOpen(!menuOpen)}>Menu</MobileMenu>
       </LogoContainer>
       <NavItemsContainer menuOpen={menuOpen}>
+        <Link href="/" passHref>
+          <NavItem active={currentRoute === '/'}>Home</NavItem>
+        </Link>
         <Link href="/projects" passHref>
           <NavItem active={currentRoute === '/projects'}>Projects</NavItem>
         </Link>
