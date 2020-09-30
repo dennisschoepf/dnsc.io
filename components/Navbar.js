@@ -99,13 +99,15 @@ export default function Navbar() {
         <Link href="/thoughts" passHref>
           <NavItem active={currentRoute === '/thoughts'}>Thoughts</NavItem>
         </Link>
+        <Link href="/collections" passHref>
+          <NavItem active={currentRoute === '/collections'}>
+            Collections
+          </NavItem>
+        </Link>
         <Link href="/photography" passHref>
           <NavItem active={currentRoute === '/photography'}>
             Photography
           </NavItem>
-        </Link>
-        <Link href="https://knowledge.dnsc.io" passHref>
-          <NavItem target="_blank">Knowledge Base</NavItem>
         </Link>
         <Link href="/about" passHref>
           <NavItem active={currentRoute === '/about'}>About</NavItem>
