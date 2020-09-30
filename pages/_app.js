@@ -6,16 +6,6 @@ import Footer from '../components/Footer';
 const GlobalStyles = createGlobalStyle`
   ${reset}
 
-  @font-face {
-    font-family: 'Cerebri';
-    src: url('/fonts/CerebriRegular.otf');
-  }
-
-  @font-face {
-    font-family: 'CerebriBold';
-    src: url('/fonts/CerebriBold.otf');
-  }
-
   html {
     font-size: 10px;
     margin: 0;
@@ -27,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Cerebri', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.8rem;
     width: 100%;
     height: 100%;
@@ -63,10 +53,7 @@ const theme = {
     xxl: '4.8rem',
     xxxl: '7.2rem',
   },
-  fonts: {
-    reg: "'Cerebri', sans-serif",
-    bold: "'CerebriBold', sans-serif",
-  },
+  font: "'IBM Plex Sans', sans-serif",
 };
 
 const SiteWrapper = styled.main`

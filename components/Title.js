@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const StyledTitle = styled.h1`
   color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.sizes.xl};
-  font-family: ${(props) => props.theme.fonts.bold};
+  font-family: ${(props) => props.theme.font};
+  font-weight: 700;
   padding: 0;
   margin: 0;
 `;

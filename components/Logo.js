@@ -10,7 +10,8 @@ const LogoContainer = styled.div`
 
 const LogoFont = styled.a`
   display: block;
-  font-family: ${(props) => props.theme.fonts.bold};
+  font-family: ${(props) => props.theme.font};
+  font-weight: 700;
   font-size: 2.2rem;
   color: ${(props) => props.theme.colors.black};
   transform: rotate(12deg);
