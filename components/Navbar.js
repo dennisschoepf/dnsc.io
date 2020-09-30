@@ -19,8 +19,8 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: ${(props) => props.theme.sizes.xs};
-  margin-bottom: ${(props) => props.theme.sizes.m};
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
 
   & > *:first-child {
     margin-left: ${(props) => props.theme.sizes.xs};
@@ -32,6 +32,8 @@ const LogoContainer = styled.div`
 
   ${media.greaterThan('medium')`
     justify-content: center;
+    margin-top: ${(props) => props.theme.sizes.m};
+    margin-bottom: ${(props) => props.theme.sizes.xl};
   `}
 `;
 
@@ -44,9 +46,12 @@ const NavItemsContainer = styled.ul`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: ${(props) => props.theme.sizes.s};
 
   ${media.greaterThan('medium')`
     display: flex;
+    margin-top: 0;
+    margin-bottom: ${(props) => props.theme.sizes.s};
   `}
 `;
 
