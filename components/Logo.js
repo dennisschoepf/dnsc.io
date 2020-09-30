@@ -12,7 +12,7 @@ const LogoFont = styled.a`
   display: block;
   font-family: ${(props) => props.theme.font};
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   color: ${(props) => props.theme.colors.black};
   transform: rotate(12deg);
 `;

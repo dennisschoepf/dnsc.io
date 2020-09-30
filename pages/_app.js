@@ -38,7 +38,8 @@ const GlobalStyles = createGlobalStyle`
 const theme = {
   colors: {
     white: '#ffffff',
-    black: '#000000',
+    black: '#151515',
+    grey: '#5f5f5f',
     yellow: '#FAFF13',
     blue: '#1D92FF',
     red: '#FF2F2F',
@@ -53,6 +54,7 @@ const theme = {
     xxl: '4.8rem',
     xxxl: '7.2rem',
   },
+  borderRadius: '0.5rem',
   font: "'IBM Plex Sans', sans-serif",
 };
 
