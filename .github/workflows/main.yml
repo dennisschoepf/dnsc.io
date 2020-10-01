@@ -35,7 +35,7 @@ jobs:
         with:
            host: ${{ secrets.REMOTE_HOST }} 
            username: ${{ secrets.REMOTE_USER }} 
-           password: ${{ secrets.REMOTE_PSSWD }} 
+           key: ${{ secrets.REMOTE_SSH_KEY }}
            port: 22
            script: whoami 
 
@@ -45,8 +45,7 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
-          password: ${{ secrets.REMOTE_PSSWD }}
+          key: ${{ secrets.REMOTE_SSH_KEY }}
           target: ${{ secrets.REMOTE_DIR }}
           source: html
           rm: true
-          debug: true
