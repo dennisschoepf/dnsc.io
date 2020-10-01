@@ -41,3 +41,4 @@ jobs:
           target: ${{ secrets.REMOTE_DIR }}
           source: html
           rm: true
+          debug: true
