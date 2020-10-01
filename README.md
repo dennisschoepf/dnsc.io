@@ -6,4 +6,4 @@ Welcome to the repository of my personal website. You're looking at the code for
 
 ## Issues & Bugs
 
-If you're finding any issues with the site, please create an issue within this repository.
+If you're found a bug or another issue on the site, please create an issue within this repository.
