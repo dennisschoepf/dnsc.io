@@ -6,7 +6,7 @@ name: Deployment
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,19 +19,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - uses: actions/cache@v2
         with:
           path: ${{ github.workspace }}/.next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
-        
-        
+
       - name: Install dependencies
         run: npm install
-        
+
       - name: Build & export site
         run: npm run build
-        
+
       # You may pin to the exact commit or the version
       - name: Copy files to server
         uses: appleboy/scp-action@v0.1.1
@@ -40,6 +39,5 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_KEY }}
           target: ${{ secrets.REMOTE_DIR }}
-          source: out
+          source: html
           rm: true
-          strip_components: 1
