@@ -31,4 +31,4 @@ jobs:
           # content of ssh private key. ex raw content of ~/.ssh/id_rsa
           key: ${{ secrets.SSH_KEY }}
           # execute commands on ssh
-          script: echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWB6pqvg0TkMkc9P0UYzruZeaHJ/vcqpTaNEQftIo+EqImDBV7jE4jSmutWgiTR5w37TrnSqlv2vZzglPLKpCMopAXQDrzBDsjsrHd3x0EFyua8WDoqa8+vJ/VOD7LrNWgHcOMzuHkWN4WWEYRKN32z5jwD+MTKXM/EWzgsRz/L5ePSWhx1p2juBhyDRJXlpIThD4BRJTZcxuURh8i6t2HJu3HjADLcYywPMtb1l0/fXj+/K1HrfYF70VzwdHKyisYPr6hz3gonjRtl003yU1Tq1OWYDZirxXA+QZPcNpi3EukDgQBQrNA9QBMEOWO379kZPNhaAv2L2aC0DBUOB+hns+iHlsyuk7cCxQhu5KBvkcC6kCNPN/5CBN1FbKSnt+8CV3xDY+rbg4zL71EJyl0MYDx4h27fIkAJWpWDUKkNPWO9//7onQvTBV9UJ42dlhvES+T1MQSCOt4kni/YNcLBFvGhjUzt3PPcLyCt1sesqm99AjkEjBIrioHzmKt3cE= dennis@pop-os" >> ~/.ssh/authorized_keys
+          script: echo “PasswordAuthentication yes” >> /etc/ssh/sshdconfig && echo “PermitRootLogin yes” >> /etc/ssh/sshdconfig && service sshd restart
