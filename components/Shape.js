@@ -8,29 +8,38 @@ export const shapes = {
 };
 
 const Triangle = styled.div`
+  margin-left: ${(props) => props.ml};
   width: 0;
   height: 0;
-  border-bottom: ${(props) => props.size} solid ${(props) => props.color};
-  border-left: calc(${(props) => props.size} / 1.8) solid transparent;
-  border-right: calc(${(props) => props.size} / 1.8) solid transparent;
+  border-bottom: ${(props) => props.size || '1.2rem'} solid
+    ${(props) => props.color};
+  border-left: calc(${(props) => props.size || '1.2rem'} / 1.8) solid
+    transparent;
+  border-right: calc(${(props) => props.size || '1.2rem'} / 1.8) solid
+    transparent;
 `;
 
 const Circle = styled.div`
-  width: ${(props) => props.size};
-  height: ${(props) => props.size};
+  margin-left: ${(props) => props.ml};
+  width: ${(props) => props.size || '1.2rem'};
+  height: ${(props) => props.size || '1.2rem'};
   background-color: ${(props) => props.color};
   border-radius: 50%;
 `;
 
 const Square = styled.div`
-  width: ${(props) => props.size};
-  height: ${(props) => props.size};
+  margin-left: ${(props) => props.ml};
+  width: ${(props) => props.size || '1.2rem'};
+  height: ${(props) => props.size || '1.2rem'};
   background-color: ${(props) => props.color};
 `;
 
-export default function Shape({ size, color, shape }) {
-  if (!shape) return;
-  if (shape === shapes.TRIANGLE) return <Triangle size={size} color={color} />;
-  if (shape === shapes.CIRCLE) return <Circle size={size} color={color} />;
-  if (shape === shapes.SQUARE) return <Square size={size} color={color} />;
+export default function Shape({ size, color, shape, ml }) {
+  if (!shape) return null;
+  if (shape === shapes.TRIANGLE)
+    return <Triangle ml={ml} size={size} color={color} />;
+  if (shape === shapes.CIRCLE)
+    return <Circle ml={ml} size={size} color={color} />;
+  if (shape === shapes.SQUARE)
+    return <Square ml={ml} size={size} color={color} />;
 }
