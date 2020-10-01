@@ -4,6 +4,7 @@ import styled, { useTheme } from 'styled-components';
 import Accordion from '../components/Accordion/Accordion';
 import CollectionSubcategories from '../components/CollectionSubcategories';
 import Container from '../components/Container';
+import Description from '../components/Description';
 import Shape, { shapes } from '../components/Shape';
 import Title from '../components/Title';
 import categories from '../content/collections/categories';
@@ -32,10 +33,16 @@ export default function Collections() {
             <Shape ml={sizes.s} shape={shapes.TRIANGLE} color={colors.red} />
             <Shape ml={sizes.s} shape={shapes.SQUARE} color={colors.blue} />
           </Shapes>
-          Collections
+          My Collections
         </Title>
       </Container>
       <Container>
+        <Description>
+          Below you can find collections of links, articles, tools and more that
+          I find myself referring to often. They help me a lot in my daily work
+          and make my life that much easier. Thanks to all the authors and
+          creators behind those great pieces.
+        </Description>
         <Accordion items={accordionItems} />
       </Container>
     </Fragment>

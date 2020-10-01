@@ -6,6 +6,10 @@ import Footer from '../components/Footer';
 const GlobalStyles = createGlobalStyle`
   ${reset}
 
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 10px;
     margin: 0;
@@ -18,13 +22,15 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
     width: 100%;
     height: 100%;
   }
 
   #__next {
     height: 100%;
+    width: 100%;
   }
 
   #SiteWrapper {
@@ -32,6 +38,7 @@ const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    max-width: 100%;
   }
 `;
 

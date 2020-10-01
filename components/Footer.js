@@ -7,6 +7,7 @@ const FooterContainer = styled.div`
   background-color: ${(props) => props.theme.colors.black};
   color: ${(props) => props.theme.colors.white};
   padding: ${(props) => props.theme.sizes.xl} 0;
+  margin-top: ${(props) => props.theme.sizes.xl};
 `;
 
 export default function Footer() {

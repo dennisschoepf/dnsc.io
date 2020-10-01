@@ -6,20 +6,28 @@ const Wrapper = styled.div`
   background-color: ${(props) => props.bgColor || props.theme.colors.white};
   padding: ${(props) =>
     `${props.noYPadding ? '0' : props.theme.sizes.m} ${props.theme.sizes.m}`};
+  width: 100%;
 
   ${media.greaterThan('medium')`
     padding-top: ${(props) => (props.noYPadding ? '0' : props.theme.sizes.xl)};
     padding-bottom: ${(props) =>
       props.noYPadding ? '0' : props.theme.sizes.xl};
     margin: 0 auto;
-    max-width: 768px;
+    max-width: 100%;
+  `}
+`;
+
+const InnerWrapper = styled.div`
+  ${media.greaterThan('medium')`
+    max-width: 76.8rem;
+    margin: 0 auto;
   `}
 `;
 
 export default function Container({ children, noYPadding, bgColor }) {
   return (
     <Wrapper noYPadding={noYPadding} bgColor={bgColor}>
-      {children}
+      <InnerWrapper>{children}</InnerWrapper>
     </Wrapper>
   );
 }

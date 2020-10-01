@@ -27,6 +27,10 @@ const Details = styled.details`
   border: 3px solid ${(props) => props.theme.colors.black};
   background-color: ${(props) => props.theme.colors.black};
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &[open] > ${Summary}:after {
     content: '-';
   }
