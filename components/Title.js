@@ -6,8 +6,13 @@ const StyledTitle = styled.h1`
   font-size: ${(props) => props.theme.sizes.xl};
   font-family: ${(props) => props.theme.font};
   font-weight: 700;
+  text-align: center;
   padding: 0;
-  margin: 0;
+  margin: ${(props) => `${props.theme.sizes.xxl} 0 ${props.theme.sizes.xl}`};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 `;
 
 export default function Title({ children }) {

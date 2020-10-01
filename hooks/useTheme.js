@@ -10,3 +10,8 @@ export const useSizes = () => {
   const { sizes } = useContext(ThemeContext);
   return sizes;
 };
+
+export const useColors = () => {
+  const { colors } = useContext(ThemeContext);
+  return colors;
+};
