@@ -104,10 +104,8 @@ export default function Navbar() {
             Collections
           </NavItem>
         </Link>
-        <Link href="/photography" passHref>
-          <NavItem active={currentRoute === '/photography'}>
-            Photography
-          </NavItem>
+        <Link href="/creative" passHref>
+          <NavItem active={currentRoute === '/creative'}>Creative</NavItem>
         </Link>
         <Link href="/about" passHref>
           <NavItem active={currentRoute === '/about'}>About</NavItem>

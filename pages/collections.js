@@ -5,17 +5,9 @@ import Accordion from '../components/Accordion/Accordion';
 import CollectionSubcategories from '../components/CollectionSubcategories';
 import Container from '../components/Container';
 import Description from '../components/Description';
-import Shape, { shapes } from '../components/Shape';
+import Shape, { Shapes, shapes } from '../components/Shape';
 import Title from '../components/Title';
 import categories from '../content/collections/categories';
-
-const Shapes = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: ${(props) => props.theme.sizes.l};
-`;
 
 export default function Collections() {
   const { colors, sizes } = useTheme();
@@ -33,7 +25,7 @@ export default function Collections() {
             <Shape ml={sizes.s} shape={shapes.TRIANGLE} color={colors.red} />
             <Shape ml={sizes.s} shape={shapes.SQUARE} color={colors.blue} />
           </Shapes>
-          My Collections
+          Collections & Lists
         </Title>
       </Container>
       <Container>

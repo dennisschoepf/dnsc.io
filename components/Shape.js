@@ -34,6 +34,14 @@ const Square = styled.div`
   background-color: ${(props) => props.color};
 `;
 
+export const Shapes = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: ${(props) => props.theme.sizes.l};
+`;
+
 export default function Shape({ size, color, shape, ml }) {
   if (!shape) return null;
   if (shape === shapes.TRIANGLE)
