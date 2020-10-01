@@ -30,6 +30,14 @@ jobs:
 
       - name: Build & export site
         run: npm run build
+      
+      - uses: appleboy/ssh-action@master 
+        with:
+           host: ${{ secrets.REMOTE_HOST }} 
+           username: ${{ secrets.REMOTE_USER }} 
+           password: ${{ secrets.REMOTE_PSSWD }} 
+           port: 22
+           script: whoami 
 
       # You may pin to the exact commit or the version
       - name: Copy files to server
