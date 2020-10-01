@@ -1,4 +1,4 @@
-import { Head } from 'next/document';
+import { Head } from 'next/head';
 import { Fragment } from 'react';
 import styled, { useTheme } from 'styled-components';
 import Title from '../components/Title';
