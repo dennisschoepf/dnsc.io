@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: ssh-pipeline
+        # You may pin to the exact commit or the version.
+        # uses: cross-the-world/ssh-pipeline@7f022867934a210af826af99ef80d96f03a094d5
+        uses: cross-the-world/ssh-pipeline@v1.2.0
+        with:
+          # ssh remote host
+          host: 157.245.25.51
+          # ssh remote user
+          user: root
+          # content of ssh private key. ex raw content of ~/.ssh/id_rsa
+          key: ${{ secrets.SSH_KEY }}
+          # execute commands on ssh
+          script: echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWB6pqvg0TkMkc9P0UYzruZeaHJ/vcqpTaNEQftIo+EqImDBV7jE4jSmutWgiTR5w37TrnSqlv2vZzglPLKpCMopAXQDrzBDsjsrHd3x0EFyua8WDoqa8+vJ/VOD7LrNWgHcOMzuHkWN4WWEYRKN32z5jwD+MTKXM/EWzgsRz/L5ePSWhx1p2juBhyDRJXlpIThD4BRJTZcxuURh8i6t2HJu3HjADLcYywPMtb1l0/fXj+/K1HrfYF70VzwdHKyisYPr6hz3gonjRtl003yU1Tq1OWYDZirxXA+QZPcNpi3EukDgQBQrNA9QBMEOWO379kZPNhaAv2L2aC0DBUOB+hns+iHlsyuk7cCxQhu5KBvkcC6kCNPN/5CBN1FbKSnt+8CV3xDY+rbg4zL71EJyl0MYDx4h27fIkAJWpWDUKkNPWO9//7onQvTBV9UJ42dlhvES+T1MQSCOt4kni/YNcLBFvGhjUzt3PPcLyCt1sesqm99AjkEjBIrioHzmKt3cE= dennis@pop-os" >> ~/.ssh/authorized_keys
