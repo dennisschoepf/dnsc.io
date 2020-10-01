@@ -1,3 +1,4 @@
+import { Head } from 'next/document';
 import { Fragment } from 'react';
 import styled, { useTheme } from 'styled-components';
 import Title from '../components/Title';
@@ -7,6 +8,9 @@ export default function Home() {
 
   return (
     <Fragment>
+      <Head>
+        <title>dnsc.io</title>
+      </Head>
       <div
         style={{
           height: '100%',
