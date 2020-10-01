@@ -1,9 +1,12 @@
-import { Fragment } from 'react';
+import Link from 'next/link';
+import { Fragment, useEffect } from 'react';
 import styled, { useTheme } from 'styled-components';
 import Accordion from '../components/Accordion/Accordion';
+import CollectionSubcategories from '../components/CollectionSubcategories';
 import Container from '../components/Container';
 import Shape, { shapes } from '../components/Shape';
 import Title from '../components/Title';
+import categories from '../content/collections/categories';
 
 const Shapes = styled.div`
   width: 100%;
@@ -15,13 +18,10 @@ const Shapes = styled.div`
 
 export default function Collections() {
   const { colors, sizes } = useTheme();
-
-  const testCat = [
-    {
-      summary: 'Design',
-      detail: <div>Details</div>,
-    },
-  ];
+  const accordionItems = categories.map((category) => ({
+    summary: category.name,
+    detail: <CollectionSubcategories subcategories={category.subcategories} />,
+  }));
 
   return (
     <Fragment>
@@ -36,7 +36,7 @@ export default function Collections() {
         </Title>
       </Container>
       <Container>
-        <Accordion items={testCat} />
+        <Accordion items={accordionItems} />
       </Container>
     </Fragment>
   );
