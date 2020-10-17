@@ -32,8 +32,7 @@ export default function Collections() {
         <Description>
           Below you can find collections of links, articles, tools and more that
           I find myself referring to often. They help me a lot in my daily work
-          and make my life that much easier. Thanks to all the authors and
-          creators behind those great pieces.
+          and make my life that much easier.
         </Description>
         <Accordion items={accordionItems} />
       </Container>

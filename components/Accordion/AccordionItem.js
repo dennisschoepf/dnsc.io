@@ -24,6 +24,7 @@ const Summary = styled.summary`
 `;
 
 const Details = styled.details`
+  display: flex;
   border: 3px solid ${(props) => props.theme.colors.black};
   background-color: ${(props) => props.theme.colors.black};
 
