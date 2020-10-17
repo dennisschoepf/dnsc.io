@@ -20,11 +20,14 @@ const Summary = styled.summary`
     color: #fff;
     font-size: ${(props) => props.theme.sizes.xl};
     font-weight: 700;
+    position: absolute;
+    top: ${props => props.theme.sizes.m};
+    right: ${props => props.theme.sizes.m};
   }
 `;
 
 const Details = styled.details`
-  display: flex;
+  position: relative;
   border: 3px solid ${(props) => props.theme.colors.black};
   background-color: ${(props) => props.theme.colors.black};
 

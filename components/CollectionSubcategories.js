@@ -21,7 +21,7 @@ export default function CollectionSubcategories({ subcategories }) {
     <CategoryWrapper>
       {subcategories.map(({ path, name }) => (
         <Link key={name} href={path} passHref>
-          <StyledLink>{name}</StyledLink>
+          <StyledLink>{name} &rarr;</StyledLink>
         </Link>
       ))}
     </CategoryWrapper>
