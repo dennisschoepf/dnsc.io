@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledTitle = styled.h1`
   color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.sizes.xl};
+  line-height: calc(${props => props.theme.sizes.xl} + 0.8rem);
   font-family: ${(props) => props.theme.font};
   font-weight: 700;
   text-align: center;
