@@ -6,6 +6,7 @@ import CollectionSubcategories from '../components/CollectionSubcategories';
 import Container from '../components/Container';
 import Description from '../components/Description';
 import Shape, { Shapes, shapes } from '../components/Shape';
+import Spacer from '../components/Spacer';
 import Title from '../components/Title';
 import categories from '../content/collections/categories';
 
@@ -29,12 +30,13 @@ export default function Collections() {
         </Title>
       </Container>
       <Container>
+        <Spacer size={sizes.m} />
         <Description>
           Below you can find collections of links, articles, tools and more that
           I find myself referring to often. They help me a lot in my daily work
-          and make my life that much easier. Thanks to all the authors and
-          creators behind those great pieces.
+          and make my life that much easier.
         </Description>
+        <Spacer size={sizes.l} />
         <Accordion items={accordionItems} />
       </Container>
     </Fragment>
