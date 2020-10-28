@@ -6,16 +6,14 @@
     "build": "next build && next export -o html/",
     "start": "next start"
   },
-  "dependencies": {
-    "next": "^9.5.5",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-is": "^16.13.1",
+  "devDependencies": {
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is": "^17.0.1",
     "styled-components": "^5.2.0",
     "styled-media-query": "^2.1.2",
-    "styled-reset": "^4.2.3"
-  },
-  "devDependencies": {
+    "styled-reset": "^4.3.0",
     "babel-plugin-styled-components": "^1.11.1"
   },
   "license": "MIT"
