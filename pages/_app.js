@@ -6,6 +6,25 @@ import Footer from '../components/Footer';
 const GlobalStyles = createGlobalStyle`
   ${reset}
 
+  /* ibm-plex-sans-regular - latin */
+  @font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IBM Plex Sans'), local('IBMPlexSans'),
+        url('../public/fonts/ibm-plex-sans-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../public/fonts/ibm-plex-sans-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* ibm-plex-sans-700 - latin */
+  @font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'),
+        url('../public/fonts/ibm-plex-sans-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../public/fonts/ibm-plex-sans-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
   *, *::after, *::before {
     box-sizing: border-box;
   }
