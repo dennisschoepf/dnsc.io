@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'IBM Plex Sans';
     font-style: normal;
+    font-display: swap;
     font-weight: 400;
     src: local('IBM Plex Sans'), local('IBMPlexSans'),
         url('../public/fonts/ibm-plex-sans-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -19,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'IBM Plex Sans';
     font-style: normal;
+    font-display: swap;
     font-weight: 700;
     src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'),
         url('../public/fonts/ibm-plex-sans-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
