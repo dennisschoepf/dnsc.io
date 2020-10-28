@@ -1,4 +1,4 @@
-# dnsc.io
+<img src="https://raw.githubusercontent.com/dennisschoepf/dnsc.io/master/dnsc-logo-wide.png" alt="dnsc.io Logo" height="auto" width="100%" />
 
 ![Deployment](https://github.com/dennisschoepf/dnsc.io/workflows/Deployment/badge.svg)
 
