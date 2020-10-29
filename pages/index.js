@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 import styled, { useTheme } from 'styled-components';
+import DocumentTitle from '../components/DocumentTitle';
 import Title from '../components/Title';
 import { getDocumentTitle } from '../helpers/document';
 
@@ -9,9 +10,7 @@ export default function Home() {
 
   return (
     <Fragment>
-      <Head>
-        <title>{getDocumentTitle('Home')}</title>
-      </Head>
+      <DocumentTitle title="Welcome" />
     </Fragment>
   );
 }
