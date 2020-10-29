@@ -1,5 +1,4 @@
 import styled, { ThemeProvider } from 'styled-components';
-import reset from 'styled-reset';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import GlobalStyles, { theme } from '../components/GlobalStyles';
