@@ -11,18 +11,6 @@ export default function Home() {
       <Head>
         <title>dnsc.io</title>
       </Head>
-      <div
-        style={{
-          height: '100%',
-          width: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexGrow: 1,
-        }}
-      >
-        Coming soon ...
-      </div>
     </Fragment>
   );
 }
