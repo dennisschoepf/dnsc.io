@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Fragment } from 'react';
 import styled, { useTheme } from 'styled-components';
 import Title from '../components/Title';
+import { getDocumentTitle } from '../helpers/document';
 
 export default function Home() {
   const theme = useTheme();
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Home | dnsc.io</title>
+        <title>{getDocumentTitle('Home')}</title>
       </Head>
     </Fragment>
   );
