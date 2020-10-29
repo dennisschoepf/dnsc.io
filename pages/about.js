@@ -7,7 +7,7 @@ export default function Creative() {
   const { colors, sizes } = useTheme();
 
   return (
-    <Container bgColor={colors.black}>
+    <Container>
       <Title>
         <Shapes>
           <Shape shape={shapes.CIRCLE} color={colors.yellow} />

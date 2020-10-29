@@ -6,5 +6,5 @@ import Title from '../components/Title';
 export default function Projects() {
   const { colors, sizes } = useTheme();
 
-  return <Container bgColor={colors.black}></Container>;
+  return <Container></Container>;
 }

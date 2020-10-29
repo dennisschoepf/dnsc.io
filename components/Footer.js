@@ -60,7 +60,7 @@ export default function Footer() {
   const colors = useColors();
 
   return (
-    <Container bgColor={colors.black}>
+    <Container>
       <FooterFlexContainer>
         <FooterContactHeadline>
           Want to start a conversation?

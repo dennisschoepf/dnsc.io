@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import styled, { useTheme } from 'styled-components';
 import DocumentTitle from '../components/DocumentTitle';
 import Title from '../components/Title';
+import Container from '../components/Container';
 import { getDocumentTitle } from '../lib/document';
 
 export default function Home() {
@@ -11,6 +12,13 @@ export default function Home() {
   return (
     <Fragment>
       <DocumentTitle title="Welcome" />
+      <Container>
+        <Title>
+          No fuss.
+          <br />
+          From start to finish
+        </Title>
+      </Container>
     </Fragment>
   );
 }

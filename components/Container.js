@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 
 const Wrapper = styled.div`
-  background-color: ${(props) => props.bgColor || props.theme.colors.white};
+  background-color: ${(props) => props.bgColor || props.theme.colors.black};
   padding: ${(props) =>
     `${props.noYPadding ? '0' : props.theme.sizes.xl} ${props.theme.sizes.m}`};
   width: 100%;

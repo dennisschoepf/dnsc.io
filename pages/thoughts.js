@@ -7,7 +7,7 @@ export default function Thoughts() {
 
   return (
     <Fragment>
-      <Container bgColor={colors.black}></Container>
+      <Container></Container>
     </Fragment>
   );
 }
