@@ -11,57 +11,52 @@ const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: ${(props) => props.theme.sizes.s} ${(props) => props.theme.sizes.m};
-`;
-
-const LogoContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.2rem;
-  margin-bottom: 0.4rem;
-
-  & > *:first-child {
-    margin-left: ${(props) => props.theme.sizes.xs};
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
+  padding: ${(props) => props.theme.sizes.m};
 
   ${media.greaterThan('medium')`
-    justify-content: center;
-    margin-top: ${(props) => props.theme.sizes.m};
-    margin-bottom: ${(props) => props.theme.sizes.xl};
+    padding: ${(props) => props.theme.sizes.l} ${(props) =>
+    props.theme.sizes.m};
   `}
 `;
 
 const NavItemsContainer = styled.ul`
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: ${(props) => (props.menuOpen ? 'flex' : 'none')};
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-top: ${(props) => props.theme.sizes.s};
+  flex-wrap: wrap;
+  width: 100%;
 
   ${media.greaterThan('medium')`
-    display: flex;
-    margin-top: 0;
-    margin-bottom: ${(props) => props.theme.sizes.s};
+    max-width: 76.8rem;
+    margin: 0 auto;
   `}
 `;
 
-const NavItem = styled.a`
+const NavItem = styled.li`
+  display: block;
+
+  ${media.lessThan('medium')`
+    display: ${(props) => (props.menuOpen ? 'block' : 'none')};
+    width: 100%;
+    padding: ${(props) => props.theme.sizes.s} 0;
+    text-align: center;
+    order: 4;
+  `}
+`;
+
+const NavItemLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.colors.white};
   border-bottom: 2px solid
     ${(props) => (props.active ? props.theme.colors.white : 'transparent')};
   padding: ${(props) => props.theme.sizes.s} ${(props) => props.theme.sizes.m};
   margin: ${(props) => props.theme.sizes.xs};
+
+  ${media.greaterThan('medium')`
+      &:hover {
+        border-bottom: 2px solid ${(props) => props.theme.colors.white};
+      }
+  `}
 `;
 
 const MobileMenu = styled.menu`
@@ -85,31 +80,35 @@ export default function Navbar() {
 
   return (
     <NavContainer>
-      <LogoContainer>
-        <Logo />
+      <NavItemsContainer>
+        <NavItem menuOpen={menuOpen}>
+          <Link href="/work" passHref>
+            <NavItemLink active={currentRoute === '/work'}>Work</NavItemLink>
+          </Link>
+        </NavItem>
+        <NavItem menuOpen={menuOpen}>
+          <Link href="/thoughts" passHref>
+            <NavItemLink active={currentRoute === '/thoughts'}>
+              Thoughts
+            </NavItemLink>
+          </Link>
+        </NavItem>
+        <li>
+          <Logo />
+        </li>
+        <NavItem menuOpen={menuOpen}>
+          <Link href="/collections" passHref>
+            <NavItemLink active={currentRoute === 'collections'}>
+              Collections
+            </NavItemLink>
+          </Link>
+        </NavItem>
+        <NavItem menuOpen={menuOpen}>
+          <Link href="/about" passHref>
+            <NavItemLink active={currentRoute === '/about'}>About</NavItemLink>
+          </Link>
+        </NavItem>
         <MobileMenu onClick={() => setMenuOpen(!menuOpen)}>Menu</MobileMenu>
-      </LogoContainer>
-      <NavItemsContainer menuOpen={menuOpen}>
-        <Link href="/" passHref>
-          <NavItem active={currentRoute === '/'}>Home</NavItem>
-        </Link>
-        <Link href="/projects" passHref>
-          <NavItem active={currentRoute === '/projects'}>Projects</NavItem>
-        </Link>
-        <Link href="/thoughts" passHref>
-          <NavItem active={currentRoute === '/thoughts'}>Thoughts</NavItem>
-        </Link>
-        <Link href="/collections" passHref>
-          <NavItem active={currentRoute === '/collections'}>
-            Collections
-          </NavItem>
-        </Link>
-        <Link href="/creative" passHref>
-          <NavItem active={currentRoute === '/creative'}>Creative</NavItem>
-        </Link>
-        <Link href="/about" passHref>
-          <NavItem active={currentRoute === '/about'}>About</NavItem>
-        </Link>
       </NavItemsContainer>
     </NavContainer>
   );

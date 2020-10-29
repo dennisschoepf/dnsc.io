@@ -7,6 +7,10 @@ const LogoContainer = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   padding: 0.2rem 0.3rem;
   transform: rotate(-12deg);
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const LogoFont = styled.a`
