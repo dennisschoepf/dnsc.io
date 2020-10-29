@@ -2,6 +2,10 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
 const GlobalStyles = createGlobalStyle`
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
   ${reset}
 
   /* ibm-plex-sans-regular - latin */
@@ -23,10 +27,6 @@ const GlobalStyles = createGlobalStyle`
     src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'),
         url('../fonts/ibm-plex-sans-v8-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
         url('../fonts/ibm-plex-sans-v8-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-
-  *, *::after, *::before {
-    box-sizing: border-box;
   }
 
   html {
@@ -65,7 +65,7 @@ export const theme = {
   colors: {
     white: '#ffffff',
     black: '#151515',
-    grey: '#5f5f5f',
+    grey: '#6A839A',
     yellow: '#FAFF13',
     blue: '#1D92FF',
     red: '#FF2F2F',
