@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import styled, { useTheme } from 'styled-components';
 import DocumentTitle from '../components/DocumentTitle';
 import Title from '../components/Title';
-import { getDocumentTitle } from '../helpers/document';
+import { getDocumentTitle } from '../lib/document';
 
 export default function Home() {
   const theme = useTheme();
