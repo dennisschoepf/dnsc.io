@@ -1,6 +1,29 @@
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 
+export const theme = {
+  colors: {
+    white: '#ffffff',
+    black: '#151515',
+    grey: '#6A839A',
+    yellow: '#FAFF13',
+    blue: '#1D92FF',
+    red: '#FF2F2F',
+  },
+  sizes: {
+    xxs: '0.4rem',
+    xs: '0.8rem',
+    s: '1.2rem',
+    m: '1.6rem',
+    l: '2.4rem',
+    xl: '3.2rem',
+    xxl: '4.8rem',
+    xxxl: '7.2rem',
+  },
+  borderRadius: '0.5rem',
+  font: "'IBM Plex Sans', sans-serif",
+};
+
 const GlobalStyles = createGlobalStyle`
   *, *::after, *::before {
     box-sizing: border-box;
@@ -35,6 +58,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: ${theme.colors.black};
   }
 
   body {
@@ -60,28 +84,5 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
 `;
-
-export const theme = {
-  colors: {
-    white: '#ffffff',
-    black: '#151515',
-    grey: '#6A839A',
-    yellow: '#FAFF13',
-    blue: '#1D92FF',
-    red: '#FF2F2F',
-  },
-  sizes: {
-    xxs: '0.4rem',
-    xs: '0.8rem',
-    s: '1.2rem',
-    m: '1.6rem',
-    l: '2.4rem',
-    xl: '3.2rem',
-    xxl: '4.8rem',
-    xxxl: '7.2rem',
-  },
-  borderRadius: '0.5rem',
-  font: "'IBM Plex Sans', sans-serif",
-};
 
 export default GlobalStyles;
