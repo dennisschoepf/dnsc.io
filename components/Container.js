@@ -5,13 +5,14 @@ import media from 'styled-media-query';
 const Wrapper = styled.div`
   background-color: ${(props) => props.bgColor || props.theme.colors.white};
   padding: ${(props) =>
-    `${props.noYPadding ? '0' : props.theme.sizes.m} ${props.theme.sizes.m}`};
+    `${props.noYPadding ? '0' : props.theme.sizes.xl} ${props.theme.sizes.m}`};
   width: 100%;
 
   ${media.greaterThan('medium')`
-    padding-top: ${(props) => (props.noYPadding ? '0' : props.theme.sizes.xl)};
+    padding-top: ${(props) =>
+      props.noYPadding ? '0' : props.theme.sizes.xxxl};
     padding-bottom: ${(props) =>
-      props.noYPadding ? '0' : props.theme.sizes.xl};
+      props.noYPadding ? '0' : props.theme.sizes.xxxl};
     margin: 0 auto;
     max-width: 100%;
   `}

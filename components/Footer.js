@@ -9,7 +9,6 @@ const FooterFlexContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: ${(props) => props.theme.sizes.xxl} 0;
 `;
 
 const FooterContactHeadline = styled.h3`
