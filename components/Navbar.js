@@ -35,6 +35,14 @@ const NavItemsContainer = styled.ul`
 const NavItem = styled.li`
   display: block;
 
+  &:first-child > a {
+    margin-left: 0;
+  }
+
+  &:last-child > a {
+    margin-right: 0;
+  }
+
   ${media.lessThan('medium')`
     display: ${(props) => (props.menuOpen ? 'block' : 'none')};
     width: 100%;

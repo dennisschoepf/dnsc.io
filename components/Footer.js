@@ -60,27 +60,29 @@ export default function Footer() {
   const colors = useColors();
 
   return (
-    <Container>
-      <FooterFlexContainer>
-        <FooterContactHeadline>
-          Want to start a conversation?
-        </FooterContactHeadline>
-        <FooterContactButton>
-          <Button
-            as="a"
-            href="mailto:me@dnsc.io?subject=Let%27s%20discuss%21&body=Hi%20Dennis%2C%0A%0AI%20want%20to%20talk%20with%20you%20about%3A"
-          >
-            Contact me
-          </Button>
-        </FooterContactButton>
-        <FooterLegal>
-          © Dennis Schoepf {new Date().getFullYear()}
-          <br />
-          Standing on the shoulders of giants.
-          <br />
-          Built with next.js, code on Github.
-        </FooterLegal>
-      </FooterFlexContainer>
-    </Container>
+    <footer>
+      <Container>
+        <FooterFlexContainer>
+          <FooterContactHeadline>
+            Want to start a conversation?
+          </FooterContactHeadline>
+          <FooterContactButton>
+            <Button
+              as="a"
+              href="mailto:me@dnsc.io?subject=Let%27s%20discuss%21&body=Hi%20Dennis%2C%0A%0AI%20want%20to%20talk%20with%20you%20about%3A"
+            >
+              Contact me
+            </Button>
+          </FooterContactButton>
+          <FooterLegal>
+            © Dennis Schoepf {new Date().getFullYear()}
+            <br />
+            Standing on the shoulders of giants.
+            <br />
+            Built with next.js, code on Github.
+          </FooterLegal>
+        </FooterFlexContainer>
+      </Container>
+    </footer>
   );
 }
