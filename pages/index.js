@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>dnsc.io</title>
+        <title>Home | dnsc.io</title>
       </Head>
     </Fragment>
   );

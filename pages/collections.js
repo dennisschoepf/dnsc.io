@@ -36,8 +36,6 @@ export default function Collections() {
           I find myself referring to often. They help me a lot in my daily work
           and make my life that much easier.
         </Description>
-        <Spacer size={sizes.l} />
-        <Accordion items={accordionItems} />
       </Container>
     </Fragment>
   );
