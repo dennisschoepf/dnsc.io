@@ -46,9 +46,9 @@ const StyledButton = styled.button`
   }
 `;
 
-export default function Button({ children }) {
+export default function Button({ children, as }) {
   return (
-    <StyledButton>
+    <StyledButton as={as}>
       <ButtonText>{children}</ButtonText>
     </StyledButton>
   );
