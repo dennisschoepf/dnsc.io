@@ -27,7 +27,7 @@ const FooterContactHeadline = styled.h3`
   `}
 
   ${media.lessThan('350px')`
-    font-size: ${(props) => props.theme.sizes.xl}
+    font-size: ${(props) => props.theme.sizes.xl};
   `}
 `;
 
@@ -53,7 +53,7 @@ const FooterLegal = styled.small`
   `}
 
   ${media.lessThan('350px')`
-    font-size: ${(props) => props.theme.sizes.m}
+    font-size: ${(props) => props.theme.sizes.m};
   `}
 `;
 
@@ -67,7 +67,12 @@ export default function Footer() {
           Want to start a conversation?
         </FooterContactHeadline>
         <FooterContactButton>
-          <Button>Contact me</Button>
+          <Button
+            as="a"
+            href="mailto:me@dnsc.io?subject=Let%27s%20discuss%21&body=Hi%20Dennis%2C%0A%0AI%20want%20to%20talk%20with%20you%20about%3A"
+          >
+            Contact me
+          </Button>
         </FooterContactButton>
         <FooterLegal>
           © Dennis Schoepf {new Date().getFullYear()}

@@ -12,6 +12,8 @@ const ButtonText = styled.span`
 `;
 
 const StyledButton = styled.button`
+  text-decoration: none;
+  display: inline-block;
   position: relative;
   z-index: 1;
   border: none;
@@ -25,6 +27,7 @@ const StyledButton = styled.button`
   &:hover,
   &:active {
     cursor: pointer;
+    text-decoration: none;
   }
 
   &:hover ${ButtonText},&:active ${ButtonText} {
@@ -46,9 +49,9 @@ const StyledButton = styled.button`
   }
 `;
 
-export default function Button({ children, as }) {
+export default function Button({ children, as, href }) {
   return (
-    <StyledButton as={as}>
+    <StyledButton as={as} href={href}>
       <ButtonText>{children}</ButtonText>
     </StyledButton>
   );
