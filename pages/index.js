@@ -1,14 +1,10 @@
-import Nav from '../components/nav'
 
 export default function IndexPage() {
   return (
-    <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-gray-700 dark:text-gray-100">
-          Next.js + Tailwind CSS 2.0
+    <div className="pt-8">
+        <h1 className="pt-8 text-5xl text-white font-bold text-center">
+          Work in Progress ...
         </h1>
-      </div>
     </div>
   )
 }
