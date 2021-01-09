@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <div>This should work.</div>;
+  return (
+    <footer className="text-white pt-24 text-center">
+      © Dennis Schoepf 2021
+    </footer>
+  );
 }
