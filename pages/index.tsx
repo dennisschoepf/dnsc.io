@@ -1,9 +1,9 @@
+import { lang } from '../content/lang';
+
 export default function IndexPage() {
   return (
-    <div className="pt-8">
-        <h1 className="pt-8 text-5xl text-white font-bold text-center">
-          Work in Progress ...
-        </h1>
-    </div>
-  )
+    <h1 className="pt-24 text-4xl md:text-5xl uppercase text-white font-bold text-center">
+      {lang.hero.title}
+    </h1>
+  );
 }
