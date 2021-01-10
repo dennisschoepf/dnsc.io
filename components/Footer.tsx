@@ -7,8 +7,10 @@ export default function Footer() {
 
   return (
     <footer className="text-white mt-32">
-      <Container type={ContainerType.WIDE} className="text-3xl">
-        <p className="mb-4">{footer.contactText}</p>
+      <Container type={ContainerType.SMALL}>
+        <p className="mb-4 text-3xl lg:mb-6 lg:text-4xl">
+          {footer.contactText}
+        </p>
         <Button href={footer.button.link} as="a">
           {footer.button.text}
         </Button>
