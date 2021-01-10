@@ -44,3 +44,15 @@ body {
 /* Stop purging. */
 
 /* Your own custom utilities */
+.custom-button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  background-color: black;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  transform: translate(0.25rem, 0.25rem);
+}

@@ -6,7 +6,7 @@ export enum ContainerType {
 
 interface ContainerProps {
   type: ContainerType;
-  className: string;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -19,8 +19,14 @@ function getContainerClasses(
   if (type === ContainerType.SMALL) return `${otherClasses} max-w-screen-md`;
 }
 
-export default function Container({ type, className, children }: ContainerProps) {
+export default function Container({
+  type,
+  className,
+  children,
+}: ContainerProps) {
   return (
-    <div className={getContainerClasses(type, `${className} mx-auto p-6`)}>{children}</div>
+    <div className={getContainerClasses(type, `${className} mx-auto p-6`)}>
+      {children}
+    </div>
   );
 }
