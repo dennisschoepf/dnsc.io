@@ -27,12 +27,14 @@
 html,
 body {
   height: 100%;
+  font-family: 'IBM Plex Sans', 'system-ui', 'sans-serif';
+  background-color: #010101;
+  color: #fff;
 }
 
 #__next {
   height: 100%;
   /* TODO: Only temporary here */
-  background-color: #010101;
 }
 
 /* Start purging... */
@@ -44,6 +46,18 @@ body {
 /* Stop purging. */
 
 /* Your own custom utilities */
+section {
+  margin-bottom: 6rem;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+}
+
 .custom-button::after {
   content: '';
   width: 100%;

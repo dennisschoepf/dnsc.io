@@ -1,6 +1,7 @@
 interface LanguageContent {
   hero: {
-    title: string;
+    title: string[];
+    introText: string[];
   };
   footer: {
     copyright: string;
@@ -17,7 +18,10 @@ interface LanguageContent {
 
 export const lang: LanguageContent = {
   hero: {
-    title: 'No fuss.',
+    title: ["Hi I'm", 'Dennis'],
+    introText: [
+      "a Human Computer Interaction Master's student and UX Developer at Digital H trying to combine my IT, business and design backgrounds to tackle software projects holistically.",
+    ],
   },
   footer: {
     copyright: '© Dennis Schoepf',

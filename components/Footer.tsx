@@ -8,18 +8,18 @@ export default function Footer() {
   return (
     <footer className="text-white mt-32">
       <Container type={ContainerType.SMALL}>
-        <p className="mb-4 text-3xl lg:mb-6 lg:text-4xl">
+        <p className="mb-4 text-2xl lg:mb-6 lg:text-4xl">
           {footer.contactText}
         </p>
         <Button href={footer.button.link} as="a">
           {footer.button.text}
         </Button>
-        <p className="text-gray-500 text-right text-lg mt-16">
+        <p className="text-gray-400 text-right text-lg mt-16">
           {footer.copyright}, {new Date().getFullYear()} <br />
           {footer.footerText} <br />
           {footer.builtWith}{' '}
           <a
-            className="border-b-2 border-gray-500 hover:text-white"
+            className="border-b-2 border-gray-400 hover:text-white"
             target="_blank"
             href={footer.githubLink}
           >
