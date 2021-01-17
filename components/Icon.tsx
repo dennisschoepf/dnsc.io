@@ -7,7 +7,7 @@ export enum IconTypes {
 
 export interface IconProps {
   color: string;
-  size: string;
+  size: number;
   icon: IconTypes;
 }
 
