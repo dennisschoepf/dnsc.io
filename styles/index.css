@@ -47,12 +47,12 @@ body {
 
 /* Your own custom utilities */
 section {
-  margin-bottom: 6rem;
+  margin-bottom: 12rem;
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  background: -webkit-linear-gradient(#2af598, #009efd);
+  background: linear-gradient(to right, #2af598, #009efd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white;

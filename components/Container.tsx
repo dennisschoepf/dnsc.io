@@ -15,8 +15,8 @@ function getContainerClasses(
   otherClasses: string
 ): string {
   if (type === ContainerType.FULL) return `${otherClasses} w-full`;
-  if (type === ContainerType.WIDE) return `${otherClasses} max-w-screen-2xl`;
-  if (type === ContainerType.SMALL) return `${otherClasses} max-w-screen-md`;
+  if (type === ContainerType.WIDE) return `${otherClasses} max-w-screen-3xl`;
+  if (type === ContainerType.SMALL) return `${otherClasses} max-w-screen-lg`;
 }
 
 export default function Container({
