@@ -29,5 +29,6 @@ html, body {
   font-family: ${fonts.reg};
   background-color: ${colors.background};
   color: ${colors.foreground};
+  margin: 0;
 }
 `;
