@@ -4,7 +4,7 @@ export const colors = {
 };
 
 export const fonts = {
-  reg: '"IBM Plex Sans", "system-ui", "sans-serif"',
+  reg: '"Archia", "system-ui", "sans-serif"',
 };
 
 export const sizes = {
