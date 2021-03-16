@@ -21,8 +21,8 @@ export default createGlobalStyle`
 }
     
 html, body {
-  font-family: ${fonts.reg};
-  background-color: ${colors.background};
+  font-family: ${({ theme }) => theme.fonts.reg};
+  background-color: ${({ theme }) => theme.colors.background};
   color: ${colors.foreground};
   margin: 0;
 }

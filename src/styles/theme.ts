@@ -3,6 +3,11 @@ export const colors = {
   foreground: '#020202',
 };
 
+export const invertedColors = {
+  background: '#020202',
+  foreground: '#ffffff',
+};
+
 export const fonts = {
   reg: '"Archia", "system-ui", "sans-serif"',
 };
@@ -19,6 +24,20 @@ export const sizes = {
 
 export const borders = {
   reg: `2px solid ${colors.foreground}`,
+};
+
+export enum Themes {
+  REGULAR = 'REGULAR',
+  INVERTED = 'INVERTED',
+}
+
+export const invertedTheme = {
+  colors: {
+    ...invertedColors,
+  },
+  fonts,
+  sizes,
+  borders,
 };
 
 export default {
