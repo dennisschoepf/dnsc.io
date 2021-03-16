@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Logo from './Logo';
+import Title from './Title';
 
 const HeroContainer = styled.section`
   margin: ${({ theme }) =>
@@ -12,7 +13,7 @@ export default function Hero() {
   return (
     <HeroContainer>
       <Logo size={86} />
-      <h1 style={{ textAlign: 'center' }}>UNDER CONSTRUCTION.</h1>
+      <Title>UNDER CONSTRUCTION.</Title>
     </HeroContainer>
   );
 }

@@ -1,14 +1,12 @@
+import { useTheme } from 'styled-components';
 interface LogoProps {
   size: number;
   color?: string;
   className?: string;
 }
 
-export default function Logo({
-  size,
-  color = '#000000',
-  className,
-}: LogoProps) {
+export default function Logo({ size, className }: LogoProps) {
+  const { colors } = useTheme();
   return (
     <svg
       className={className}
@@ -16,7 +14,7 @@ export default function Logo({
       id="Layer_3"
       x="0"
       y="0"
-      fill={color}
+      fill={colors.foreground}
       height={`${size}px`}
       version="1.1"
       viewBox="0 0 792 1224"
